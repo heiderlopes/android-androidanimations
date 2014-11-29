@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Animações</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="label_selecione_efeito">Selecione o Efeito:</string>
+    <string name="label_avancar">Avançar</string>
+    <string name="label_voltar">Voltar</string>
+
+    <array name="animacoes">
+        <item>Blink</item>
+        <item>Bounce</item>
+        <item>Fade In</item>
+        <item>Fade Out</item>
+        <item>Move</item>
+        <item>Rotate</item>
+        <item>Sequencial</item>
+        <item>Slide Down</item>
+        <item>Slide Up</item>
+        <item>Together</item>
+        <item>Zoom In</item>
+        <item>Zoom Out</item>
+    </array>
+
+</resources>

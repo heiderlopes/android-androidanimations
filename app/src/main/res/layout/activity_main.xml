@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cabecalho"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:entries="@array/animacoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/label_selecione_efeito"/>
+
+        <Spinner
+            android:entries="@array/animacoes"
+            android:id="@+id/spTiposAnimacoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:padding="10dip">
+
+        <Button
+            android:id="@+id/btExecutar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_voltar"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/btLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_avancar"
+            android:layout_weight="0.5"
+            android:onClick="execute"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivPersonagem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rodape"
+        android:layout_below="@id/cabecalho"
+        android:src="@drawable/caricatura"/>
+</RelativeLayout>
